@@ -10,13 +10,20 @@
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
 
-<body class="antialiased bg-red-500">
+<body id="app" class="antialiased bg-red-500">
 <div class="container">
-    <h1 class="text-white text-center py-5 text-2xl font-extrabold uppercase" >home</h1>
+    <section>
+
+        <div class="flex justify-center items-center h-screen">
+            <div class="text-center">
+                <h1 class="text-white   text-4xl font-extrabold uppercase" >Welcome to Tailwindcss 3 in Laravel 10 with Vite</h1>
+                <increment-counter></increment-counter>
+    </section>
+   
 
 </div>
 
